@@ -41,7 +41,7 @@
                 android:id="@+id/txtApellido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellidos:"/>
+                android:text="apellidos:"/>
 
             <EditText
                 android:id="@+id/edtApellido"
