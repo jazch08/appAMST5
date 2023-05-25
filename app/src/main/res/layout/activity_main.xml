@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dip"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/edtClave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contrasena" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#673AB7"
+            android:onClick="Login"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Login"
+            android:textColor="#FAFAFA" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#673AB7"
+            android:onClick="registrarse"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Registrarse"
+            android:textColor="#FDFDFD" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
