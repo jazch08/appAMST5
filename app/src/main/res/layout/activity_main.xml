@@ -36,7 +36,7 @@
             android:onClick="Login"
             android:paddingLeft="15dip"
             android:paddingRight="15dip"
-            android:text="Login"
+            android:text="login"
             android:textColor="#FAFAFA" />
 
         <Button
@@ -48,7 +48,7 @@
             android:onClick="registrarse"
             android:paddingLeft="15dip"
             android:paddingRight="15dip"
-            android:text="Registrarse"
+            android:text="registrarse"
             android:textColor="#FDFDFD" />
     </LinearLayout>
 
