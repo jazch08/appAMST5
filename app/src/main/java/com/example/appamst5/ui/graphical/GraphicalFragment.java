@@ -1,4 +1,4 @@
-package com.example.appamst5.ui.video;
+package com.example.appamst5.ui.graphical;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,22 +9,22 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.arch.lifecycle.ViewModelProvider;
 
-import com.example.appamst5.databinding.FragmentVideoBinding;
+import com.example.appamst5.databinding.FragmentGraphicalBinding;
 
-public class VideoFragment extends Fragment {
+public class GraphicalFragment extends Fragment {
 
-    private FragmentVideoBinding binding;
+    private FragmentGraphicalBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        VideoViewModel videoViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(VideoViewModel.class);
+        GraphicalViewModel graphicalViewModel =
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(GraphicalViewModel.class);
 
-        binding = FragmentVideoBinding.inflate(inflater, container, false);
+        binding = FragmentGraphicalBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textVideo;
-        videoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textGraphical;
+        graphicalViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

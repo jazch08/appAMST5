@@ -10,5 +10,6 @@
 
     <string name="menu_video">Video</string>
     <string name="menu_calendar">Calendario</string>
+    <string name="menu_graphical">Grafico Lineal</string>
     <string name="menu_slideshow">Slideshow</string>
 </resources>

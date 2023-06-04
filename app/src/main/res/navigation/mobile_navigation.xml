@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_calendar" />
 
     <fragment
+        android:id="@+id/nav_graphical"
+        android:name="com.example.appamst5.ui.graphical.GraphicalFragment"
+        android:label="@string/menu_graphical"
+        tools:layout="@layout/fragment_graphical" />
+
+    <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.appamst5.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
