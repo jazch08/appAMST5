@@ -1,16 +1,16 @@
-package com.example.appamst5.ui.home;
+package com.example.appamst5.ui.video;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class VideoViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public VideoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is video fragment");
     }
 
     public LiveData<String> getText() {
