@@ -19,13 +19,15 @@
             android:id="@+id/edtUsuario"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Usuario" />
+            android:hint="Usuario"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edtClave"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Contrasena" />
+            android:hint="Contrasena"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btnlogin"

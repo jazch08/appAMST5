@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAMST5"
         tools:targetApi="28">
+        <activity
+            android:name=".PrincipalPage"
+            android:exported="false"
+            android:label="@string/title_activity_principal_page"
+            android:theme="@style/Theme.AppAMST5.NoActionBar" />
         <activity
             android:name=".formulario_registro"
             android:exported="false" />

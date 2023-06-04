@@ -31,8 +31,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"Usted no cuenta con un usuario", Toast.LENGTH_SHORT);
-        toast.show();
+        if(edtUsuario.getText().length() == 0 || edtClave.getText().length() == 0){
+            Toast toast = Toast.makeText(getApplicationContext(),"Ingrese usuario y contrasena", Toast.LENGTH_SHORT);
+            toast.show();
+        } else if (edtUsuario.getText().length() == 0) {
+            Toast toast = Toast.makeText(getApplicationContext(),"Ingrese usuario", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        else if (edtClave.getText().length() == 0) {
+            Toast toast = Toast.makeText(getApplicationContext(),"Ingrese contrasena", Toast.LENGTH_SHORT);
+            toast.show();
+        }else {
+            Intent intent = new Intent(this, PrincipalPage.class);
+            startActivity(intent);
+        }
     }
 
     public void onClick(View v){
