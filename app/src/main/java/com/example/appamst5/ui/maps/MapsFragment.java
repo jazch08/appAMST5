@@ -1,4 +1,4 @@
-package com.example.appamst5.ui.slideshow;
+package com.example.appamst5.ui.maps;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,22 +9,22 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.arch.lifecycle.ViewModelProvider;
 
-import com.example.appamst5.databinding.FragmentSlideshowBinding;
+import com.example.appamst5.databinding.FragmentMapsBinding;
 
-public class SlideshowFragment extends Fragment {
+public class MapsFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentMapsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(SlideshowViewModel.class);
+        MapsViewModel mapsViewModel =
+                new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(MapsViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentMapsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textMaps;
+        mapsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
