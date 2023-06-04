@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_video" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.appamst5.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_calendar"
+        android:name="com.example.appamst5.ui.gallery.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
 
     <fragment
         android:id="@+id/nav_slideshow"
