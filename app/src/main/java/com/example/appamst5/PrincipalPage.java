@@ -3,18 +3,18 @@ package com.example.appamst5;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.NavigationView;
 
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.appamst5.databinding.ActivityPrincipalPageBinding;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class PrincipalPage extends AppCompatActivity {
 
@@ -36,6 +36,7 @@ public class PrincipalPage extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
