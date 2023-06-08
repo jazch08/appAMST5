@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnlogin);
         btnRegistrarse = (Button) findViewById(R.id.btnRegistro);
+        Intent intencion = new Intent (getApplicationContext(),MenuSlideActivity.class);
+        starActivity(intencion);
     }
 
     public void registrarse(View view){
