@@ -5,9 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.support.annotation.NonNull;
-import androidx.core.app.Fragment;
-import android.arch.lifecycle.ViewModelProvider;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+
 
 import com.example.appamst5.databinding.FragmentGraphicalBinding;
 
