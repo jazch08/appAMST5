@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.appamst5.databinding.FragmentMapsBinding;
+import com.google.android.gms.maps.MapView;
 
 public class MapsFragment extends Fragment {
 
@@ -23,9 +24,9 @@ public class MapsFragment extends Fragment {
 
         binding = FragmentMapsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
-        final TextView textView = binding.textMaps;
-        mapsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final MapView mapView = binding.mapaEspol;
+        //final TextView textView = binding.textMaps;
+        //mapsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
